@@ -1,0 +1,34 @@
+# Goliath AI Voice Assistant - Dependencies
+# Python 3.11+
+
+# Claude Agent SDK
+claude-agent-sdk>=0.1.0
+
+# Speech-to-Text
+faster-whisper>=1.0.0
+
+# Text-to-Speech
+edge-tts>=6.1.0
+
+# Audio processing (TTS post-processing, audio utilities)
+librosa>=0.10.0
+soundfile>=0.12.0
+numpy>=1.26.0
+
+# Wake word detection
+openwakeword>=0.6.0
+
+# Audio I/O (microphone, clap detection)
+pyaudio>=0.2.14
+
+# Audio playback (BGM, sound effects)
+pygame>=2.5.0
+
+# GUI (HUD overlay)
+PyQt6>=6.6.0
+
+# HTTP / external APIs (KMA weather, AirKorea)
+requests>=2.31.0
+
+# Environment variables
+python-dotenv>=1.0.0
