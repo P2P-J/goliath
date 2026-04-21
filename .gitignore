@@ -49,6 +49,12 @@ models/
 *.swp
 *.swo
 
+# Claude Code 개인 설정 (팀 공유 settings.json 은 별도 커밋)
+.claude/settings.local.json
+
+# Runtime temp (STT/TTS 중간 오디오 파일 등)
+.runtime/
+
 # OS
 Thumbs.db
 .DS_Store

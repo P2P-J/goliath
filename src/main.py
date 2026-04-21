@@ -1,13 +1,20 @@
-"""Goliath 진입점. Orchestrator 를 기동한다.
+"""Goliath 진입점. Phase 1 MVP — PyQt6 창 기동."""
 
-Phase 0 단계에서는 placeholder 로만 존재한다.
-실제 구동 로직은 Phase 1 MVP 에서 구현.
-"""
+from __future__ import annotations
+
+import sys
+
+from PyQt6.QtWidgets import QApplication
+
+from src.ui.main_window import MainWindow
 
 
-def main() -> None:
-    raise NotImplementedError("Phase 1 MVP 에서 Orchestrator 기동 로직을 구현합니다.")
+def main() -> int:
+    app = QApplication(sys.argv)
+    window = MainWindow()
+    window.show()
+    return app.exec()
 
 
 if __name__ == "__main__":
-    main()
+    raise SystemExit(main())
